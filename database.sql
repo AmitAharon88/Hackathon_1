@@ -1,0 +1,154 @@
+-- CREATE TABLE trivia_topics (
+-- 	trivia_id SERIAL PRIMARY KEY,
+-- 	topic VARCHAR(30) NOT NULL
+-- );
+
+-- CREATE TABLE question (
+-- 	question_id SERIAL PRIMARY KEY,
+-- 	trivia_id INTEGER REFERENCES trivia_topics(trivia_id),
+-- 	question VARCHAR(300) NOT NULL
+-- );
+
+-- CREATE TABLE answer (
+-- 	answer_id SERIAL PRIMARY KEY,
+-- 	question_id INTEGER REFERENCES question(question_id),
+-- 	answer_option VARCHAR(300) NOT NULL
+-- );
+
+-- CREATE TABLE correct_answer(
+-- 	correct_answer_id SERIAL PRIMARY KEY,
+-- 	question_id INTEGER REFERENCES question(question_id),
+-- 	answer VARCHAR(50) NOT NULL
+-- );
+
+-- insert into trivia_topics (topic)
+-- values ('Harry Potter'), ('The Office')
+
+-- insert into question (trivia_id, question)
+-- values
+-- (1, 'How was Hermione able to take extra lessons?'),
+-- (1, 'Who is manipulated into vandalizing Hogwarts with messages about the Chamber of Secrets?'),
+-- (1, 'Where was Harry Potter born?'),
+-- (1, 'What is Professor McGonagall’s animagus?'),
+-- (1, 'What type of creature is Fluffy?'),
+-- (1, 'Who is Harrys godfather?'),
+-- (1, 'What is Voldemorts real name?'),
+-- (1, 'What is the British term for a nonmagical person?'),
+-- (1, 'Who anonymously sends Harry his fathers Invisibility Cloak on Christmas?'),
+-- (1, 'What potion gives good luck to those who drink it?'),
+-- (2, 'What does Pam steal in the first season?'),
+-- (2, 'Who stole all of Michael’s blue jeans when he was a kid?'),
+-- (2, 'How does Michael burn his foot?'),
+-- (2, 'What color does Angela think is whore-ish'),
+-- (2, 'What does Dwight say is the scariest animal?'),
+-- (2, 'What does Stanley give to Phyllis when he returns to Scranton for Dwight and Angelas wedding?'),
+-- (2, 'What is Michaels username for the dating site?'),
+-- (2, 'What is Kelly’s middle name?'),
+-- (2, 'According to Michael, what was Phyllis’ nickname in high school?'),
+-- (2, 'Dwight keeps what in his car for special occasions?')
+
+-- insert into answer (question_id, answer_option)
+-- values
+-- (1, 'By using a time-turner'),
+-- (1, 'By using a a time posion'),
+-- (1, 'She was not able to'),
+-- (1, 'She took extra classes at night'),
+-- (2, 'Ron Weasley'),
+-- (2, 'Luna Lovegood'),
+-- (2, 'Draco Malfoy'),
+-- (2, 'Ginny Weasley'),
+-- (3, 'London'),
+-- (3, 'Godrics Hollow'),
+-- (3, 'Kings Cross'),
+-- (3, 'Diagon Alley'),
+-- (4, 'Silver tabby cat'),
+-- (4, 'Grey spotted toad'),
+-- (4, 'Black crow'),
+-- (4, 'Pheonix'),
+-- (5, 'Dire wolf'),
+-- (5, 'Full grown unicorn'),
+-- (5, '3-headed dog'),
+-- (5, 'Giant spider'),
+-- (6, 'Professor Snape'),
+-- (6, 'Rubeus Hagrid'),
+-- (6, 'Remus Lupin'),
+-- (6, 'Sirious Black'),
+-- (7, 'Tom Marvolo Riddle'),
+-- (7, 'Tim Menerva Puzzle'),
+-- (7, 'Lucas Lovegood'),
+-- (7, 'Sirius Black'),
+-- (8, 'nomag'),
+-- (8, 'unmagical'),
+-- (8, 'mudblood'),
+-- (8, 'muggle'),
+-- (9, 'Professor Dumbledore'),
+-- (9, 'Professor McGonagall'),
+-- (9, 'Dolores Umbridge'),
+-- (9, 'Vernon Dursley'),
+-- (10, 'Felix Fox'),
+-- (10, 'Jasper Love'),
+-- (10, 'Petunia Ppotion'),
+-- (10, 'Felix Felicis'),
+-- (11, 'scissors'),
+-- (11, 'Post-It notes'),
+-- (11, 'glue-stick'),
+-- (11, 'white computer paper'),
+-- (12, 'His family’s foreign exchange student'),
+-- (12, 'His cousin'),
+-- (12, 'His mother'),
+-- (12, 'His mothers boyfriend'),
+-- (13, 'In the tube'),
+-- (13, 'Walking across hot coles'),
+-- (13, 'in a tanning booth'),
+-- (13, 'On a George Foreman Grill'),
+-- (14, 'Green'),
+-- (14, 'Red'),
+-- (14, 'Blue'),
+-- (14, 'Yellow'),
+-- (15, 'Black bear'),
+-- (15, 'Moose'),
+-- (15, 'Box jellyfish'),
+-- (15, 'Cheetah'),
+-- (16, 'A book of crossword puzzels'),
+-- (16, 'A wood carving of a bird that looks like her'),
+-- (16, 'A pair of mittens'),
+-- (16, 'A green Sweater'),
+-- (17, 'Prison Mike'),
+-- (17, 'Little Kid Lover'),
+-- (17, 'All size Baller'),
+-- (17, 'Thats what she said'),
+-- (18, 'Krishna'),
+-- (18, 'Arjun'),
+-- (18, 'Rajnigandha'),
+-- (18, 'Prianka'),
+-- (19, 'Easy Rider'),
+-- (19, 'Loose Lips Phyllis'),
+-- (19, 'Hussy Busty'),
+-- (19, 'Floozy Boozy'),
+-- (20, 'Beets'),
+-- (20, 'Nunchuks'),
+-- (20, 'Birkenstocks'),
+-- (20, 'Black Belt')
+
+-- insert into correct_answer (question_id, answer)
+-- values
+-- (1, 'By using a time-turner'),
+-- (2, 'Ginny Weasley'),
+-- (3, 'Godrics Hollow'),
+-- (4, 'Silver tabby cat'),
+-- (5, '3-headed dog'),
+-- (6, 'Sirious Black'),
+-- (7, 'Tom Marvolo Riddle'),
+-- (8, 'muggle'),
+-- (9, 'Professor Dumbledore'),
+-- (10, 'Felix Felicis'),
+-- (11, 'Post-It notes'),
+-- (12, 'His family’s foreign exchange student'),
+-- (13, 'On a George Foreman Grill'),
+-- (14, 'Green'),
+-- (15, 'Box jellyfish'),
+-- (16, 'A wood carving of a bird that looks like her'),
+-- (17, 'Little Kid Lover'),
+-- (18, 'Rajnigandha'),
+-- (19, 'Easy Rider'),
+-- (20, 'Birkenstocks')
