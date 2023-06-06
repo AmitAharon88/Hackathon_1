@@ -1,0 +1,9 @@
+Amit: Oh my goodness, I loved that you created a Harry Potter game! Your code is well-structured and clear, although we were expecting a slightly more elaborate project for a hackathon. Here are some suggestions for improvement:
+1 - You've created a table for "the office" trivia; your code would be a stronger match for a hackathon if you could introduce more trivia options.
+2 - In games of this kind, please consider that users may make typos, which should still be recognized as correct answers.
+3 - It might be simpler to use numbers for answers, rather than full names or phrases.
+
+Python OOP: 8/10
+Databases: 8/10
+API/JSON: 0/10
+General score: 7

@@ -3,7 +3,7 @@ import psycopg2
 connection = psycopg2.connect(
     database="Hackathon_1", 
     user='postgres',
-    password='Schroon3',
+    password='1948',
     host='localhost', #or IP address
     port='5432'
 )
