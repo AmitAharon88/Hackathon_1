@@ -63,12 +63,10 @@ class Trivia :
             """
             cursor.execute(query_user)
             correct_answer_results = cursor.fetchone()
-            print(correct_answer_results)
             correct_answer = correct_answer_results[0]
             if guess == correct_answer.lower() :
                 score += 1
                 print('\nCORRECT!')
-                print(score)
             else :
                 print('\nINCORRECT')
                 print(f'The correct answer is: {correct_answer}')
@@ -76,7 +74,7 @@ class Trivia :
             
         final_score = int(score/10*100)
         if final_score < 50 :
-            print(f'\nYour score is: {final_score}\nYou and Harry Potter barley know eachother\n')
+            print(f'\nYour score is: {final_score}%\nYou and Harry Potter barley know eachother\n')
         elif final_score < 70 :
             print(f'\nYour score is: {final_score}\nYou and Harry Potter and aquaintances\n')
         elif final_score < 90 :
